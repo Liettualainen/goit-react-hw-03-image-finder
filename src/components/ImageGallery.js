@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-// import { Bars } from 'react-loader-spinner';
-//import { Bars } from './Loader';
-import Loader from './Loader';
 import { getImages } from '../PixabaiAPI';
-
+import Loader from './Loader';
 import ButtonLoadMore from './ButtonLoadMore';
 import { Modal } from './Modal';
 import ImageGalleryItem from './ImageGalleryItem';

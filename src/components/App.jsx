@@ -9,7 +9,7 @@ import Searchbar from './Searchbar';
 
 export class App extends Component {
     state = {
-    searchText: '',
+      searchText: '',
   };
 
   handleSubmit = searchText => {
@@ -18,7 +18,7 @@ export class App extends Component {
 
 render() {
         const { handleSubmit } = this;
-        const { searchText, page } = this.state;
+        const { searchText } = this.state;
    return (
      <div className='App'
        
@@ -34,7 +34,7 @@ render() {
      >
        
        <Searchbar onSubmit={handleSubmit} />
-       <ImageGallery searchText={searchText} page={page} />
+       <ImageGallery searchText={searchText}/>
        <ToastContainer />
     
     </div>
